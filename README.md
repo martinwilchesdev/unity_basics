@@ -60,3 +60,5 @@ Representacion de una imagen en la tarjeta grafica. Contiene todos los pixeles q
 Cada pixel de la imagen es pintado de un color y dependiendo de los bits cada pixel se puede pintar de distintos colores.
 - Si es de un bit, solo podra pintarse de blanco o negro
 - Si es de 4 bits de 16 colores
+
+#### Sprite Mode
