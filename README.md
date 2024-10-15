@@ -84,3 +84,39 @@ Componente que permite visualizar el GameObject en la escena.
 - Draw mode: La opcion `Tiled` permite que un sprite sea ubicado en una grilla.
     - Size: Tamaño del sprite repetido en la escena.
     - Tile Mode
+
+## Delta time
+
+Valor que indica el tiempo que ha pasado desde el frame anterior
+
+## Fisicas
+
+### Componentes
+
+#### RigidBody
+
+Permite especificarle a Unity que el GameObject es un cuerpo rigido y le pueden afectar las fuerzas, como por ejemplo la gravedad.
+
+- Body Type
+    - Dynamic: Al GameObject le afecta la gravedad.
+    - Static: Objectos rigidos a los cuales no les afecta la gravedad.
+
+#### Collider
+
+Especifica la fisica de colision de un GameObject.
+
+Dependiendo de la forma del objeto se puede añadir un collider especifico.
+- BoxCollider
+- CapsuleCollider
+- CircleCollider
+
+### Material fisico
+
+Es asignado al componente BoxCollider del GameObject (friccion y rebote).
+
+### Layers de colision
+
+Pemriten especificar mediante una matriz que objetros colisionan con otros (En el `inspector` desde la opcion layer, es posible asignar a un objeto un layer de colision especifico).
+> Edit -> Project Settings -> Physics 2D -> Layer Collision Matrix
+
+> Cualquier cambio con respecto a las fisicas del objeto se realizan sobre el componente RigidObject del mismo.
