@@ -45,7 +45,7 @@ Muestra la informacion detallada de los objetos del juego
 
 Representacion visual del mundo
 
-#### Vista de juego
+#### Vista de juego (Game)
 
 Representa la vista del juego por parte del usuario
 
@@ -61,4 +61,26 @@ Cada pixel de la imagen es pintado de un color y dependiendo de los bits cada pi
 - Si es de un bit, solo podra pintarse de blanco o negro
 - Si es de 4 bits de 16 colores
 
+> Las imagenes se denominan texturas.
+
+### Filter Mode
+
+- Bilinear: Se añade un sombreado a la textura para mejorar su visualizacion.
+- Point: Se muestran los pixeles de la textura.
+
 #### Sprite Mode
+
+- Single: La imagen cargada contiene una unica textura.
+- Multiple: La imagen cargada contiene multiples texturas.
+
+Cuando se cargan imagenes que contienen multiples texturas, se realiza una unica carga en memoria de dicha imagen, posteriormente desde el sprite editor es posible:
+- Dividir la imagen en las multiples texturas que contiene.
+- Asignar el valor del pivote y de pixeles por unidad para cada textura expecifica.
+
+#### Sprite renderer
+
+Componente que permite visualizar el GameObject en la escena.
+
+- Draw mode: La opcion `Tiled` permite que un sprite sea ubicado en una grilla.
+    - Size: Tamaño del sprite repetido en la escena.
+    - Tile Mode
